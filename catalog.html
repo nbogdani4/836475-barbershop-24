@@ -9,17 +9,17 @@
 <body>
   <header class="page-header">
     <nav class="main-navigation">
-      <a href="index.html">
+      <a href="index.html" aria-label="На главную барбершопа Бородинский">
         <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
       </a>
-      <ul class="page-menu">
+      <ul class="page-menu" aria-label="Главное меню">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Новости</a></li>
         <li><a href="#">Прайс-лист</a></li>
         <li class="current"><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <ul class="user-menu">
+      <ul class="user-menu" aria-label="Пользовательское меню">
         <li><a href="#">Вход</a></li>
       </ul>
     </nav>
@@ -35,20 +35,57 @@
 
     <section class="filters">
       <h2 class="vissualy-hidden">Фильтр товаров</h2>
-      <!-- Чуть позже сдесь будет код фильтра по поварам -->
+      <form action="#" method="get" name="filters">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <label><input type="checkbox" name="baxter-of-california" checked>Baxter of California</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="mr-natty">Mr Natty</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="suavecito" checked>Suavecito</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="malin-goetz">Malin+Goetz</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="murrays">Murray’s</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="american-crew" checked>American Crew</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Группы товаров:</legend>
+          <ul>
+            <li>
+              <label><input type="radio" name="product-group" value="shaving-accessories">Бритвенные принадлежности</label>
+            </li>
+            <li>
+              <label><input type="radio" name="product-group" value="carep-roducts" checked>Средства для ухода</label>
+            </li>
+            <li>
+              <label><input type="radio" name="product-group" value="accessories">Аксессуары</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submit">Показать</button>
+      </form>
     </section>
 
     <section class="products">
-      <h2 class="visually-hidden">Наш асортимент</h2>
+      <h2 class="visually-hidden">Список средств для ухода</h2>
       <ul class="products-list">
         <li>
-          <h3>
-            <a href="catalog-item.html">
+          <a href="catalog-item.html">
+            <h3>
               <span>Набор для путешествий</span>
               <span>«Baxter of California»</span>
-            </a>
-          </h3>
-          <a href="catalog-item.html">
+            </h3>
             <img src="img/big-kit.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
           </a>
           <p>
@@ -57,13 +94,11 @@
           </p>
         </li>
         <li>
-          <h3>
-            <a href="catalog-item.html">
+          <a href="catalog-item.html">
+            <h3>
               <span>Увлажняющий кондиционер</span>
               <span>«Baxter of California»</span>
-            </a>
-          </h3>
-          <a href="catalog-item.html">
+            </h3>
             <img src="img/baxter.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
           </a>
           <p>
@@ -72,13 +107,11 @@
           </p>
         </li>
         <li>
-          <h3>
-            <a href="catalog-item.html">
+          <a href="catalog-item.html">
+            <h3>
               <span>Гель для волос</span>
               <span>«SUAVECITO»</span>
-            </a>
-          </h3>
-          <a href="catalog-item.html">
+            </h3>
             <img src="img/suavecito.jpg" width="220" height="165" alt="Гель для волос «SUAVECITO»">
           </a>
           <p>
@@ -87,13 +120,11 @@
           </p>
         </li>
         <li>
-          <h3>
-            <a href="catalog-item.html">
+          <a href="catalog-item.html">
+            <h3>
               <span>Глина для укладки волос</span>
               <span>«American crew»</span>
-            </a>
-          </h3>
-          <a href="catalog-item.html">
+            </h3>
             <img src="img/crew.jpg" width="220" height="165" alt="Глина для укладки волос «American crew»">
           </a>
           <p>
@@ -102,13 +133,11 @@
           </p>
         </li>
         <li>
-          <h3>
-            <a href="catalog-item.html">
+          <a href="catalog-item.html">
+            <h3>
               <span>Гель для волос</span>
               <span>«American crew»</span>
-            </a>
-          </h3>
-          <a href="catalog-item.html">
+            </h3>
             <img src="img/heir-gel.jpg" width="220" height="165" alt="Гель для волос «American crew»">
           </a>
           <p>
@@ -117,13 +146,11 @@
           </p>
         </li>
         <li>
-          <h3>
-            <a href="catalog-item.html">
+          <a href="catalog-item.html">
+            <h3>
               <span>Набор для бритья</span>
               <span>«Baxter of California»</span>
-            </a>
-          </h3>
-          <a href="catalog-item.html">
+            </h3>
             <img src="img/shaving-kit.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
           </a>
           <p>
@@ -131,7 +158,6 @@
             <a class="button" href="#">Купить</a>
           </p>
         </li>
-
       </ul>
 
       <ul class="pagination-list">
@@ -153,9 +179,9 @@
     <div class="footer-social">
       <span>Давайте дружить</span>
       <ul>
-        <li><a href="https://vk.com/htmlacademy">Вконтакте</a></li>
-        <li><a href="https://facebook.com/htmlacademy">Фейсбук</a></li>
-        <li><a href="https://www.instagram.com/htmlacademy/">Инстаграмм</a></li>
+        <li><a href="https://vk.com/htmlacademy">Наша страница в Вконтакте</a></li>
+        <li><a href="https://facebook.com/htmlacademy">Наша страница в Facebook</a></li>
+        <li><a href="https://www.instagram.com/htmlacademy/">Наша страница в Instargam</a></li>
       </ul>
     </div>
     <div class="footer-copyright">

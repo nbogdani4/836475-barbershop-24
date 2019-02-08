@@ -12,14 +12,14 @@
       <a>
         <img src="img/index-logo.svg" width="268" height="164" alt="Логотип барбершопа Бородинский">
       </a>
-      <ul class="page-menu">
+      <ul class="page-menu" aria-label="Главное меню">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Новости</a></li>
         <li><a href="#">Прайс-лист</a></li>
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <ul class="user-menu">
+      <ul class="user-menu" aria-label="Пользовательское меню">
         <li><a href="#">Вход</a></li>
       </ul>
     </nav>
@@ -69,8 +69,8 @@
       <a href="#">
         <img src="img/interior.jpg" width="328" height="164" alt="Фото нашего рабочего места">
       </a>
-      <button class="button" type="button">Назад</button>
-      <button class="button" type="button">Вперед</button>
+      <button class="button" type="button" aria-label="Показать предыдущее фото">Назад</button>
+      <button class="button" type="button" aria-label="Показать следующее фото">Вперед</button>
     </section>
 
     <section class="contacts">
@@ -90,17 +90,46 @@
     <section class="reservation">
       <h2>Записаться</h2>
       <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-      <form action="#" method="post">
+      <form action="#" method="post" name="reservation-form">
         <label for="date">Дата</label>
         <input type="text" name="date" id="date" placeholder="08.10.2017">
         <label for="time">Время</label>
         <input type="text" name="time" id="time" placeholder="10:00">
-        <label for="client-name">Выше имя</label>
+        <label for="client-name">Ваше имя</label>
         <input type="text" name="client-name" id="client-name" placeholder="Борода">
         <label for="user-phone">Телефон</label>
         <input type="text" name="user-phone" id="user-phone" placeholder="+7 123 456-78-90">
         <button class="button" type="submit">Отправить</button>
       </form>
+    </section>
+
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="#" method="post" name="login-form">
+        <p>
+          <label class="visually-hidden">Логин<input type="text" name="user-login" placeholder="Логин"></label>
+        </p>
+        <p>
+          <label class="visually-hidden">Пароль<input type="password" name="user-password" placeholder="Пароль"></label>
+        </p>
+        <p>
+          <label><input type="checkbox" value="remember-me">Запомните меня</label>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+        <p>
+          <button class="button" type="submit">Войти</button>
+        </p>
+      </form>
+      <button class="modal-close" type="button">Закрыть окно для авторизации в личеый кабинет</button>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Карта с координатоми нашего офиса</h2>
+      <p>
+        <img src="img/modal-map.png" alt="Наш адрес: Санкт-петербург, улица Большая Конюшенная, дом 19/8. Барбершоп Барадинский">
+      </p>
+      <button class="modal-close">Закрыть модальное окно с картой</button>
     </section>
 
   </main>
@@ -114,9 +143,9 @@
     <div class="footer-social">
       <span>Давайте дружить</span>
       <ul>
-        <li><a href="https://vk.com/htmlacademy">Вконтакте</a></li>
-        <li><a href="https://facebook.com/htmlacademy">Фейсбук</a></li>
-        <li><a href="https://www.instagram.com/htmlacademy/">Инстаграмм</a></li>
+        <li><a href="https://vk.com/htmlacademy">Наша страница в Вконтакте</a></li>
+        <li><a href="https://facebook.com/htmlacademy">Наша страница в Facebook</a></li>
+        <li><a href="https://www.instagram.com/htmlacademy/">Наша страница в Instargam</a></li>
       </ul>
     </div>
     <div class="footer-copyright">
