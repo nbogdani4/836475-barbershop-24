@@ -10,7 +10,7 @@
   <header class="page-header">
     <nav class="main-navigation">
       <a>
-        <img src="img/index-logo.svg" width="268" height="164" alt="Логотип барбершопа Бородинский">
+        <img src="img/index-logo.svg" width="371" height="155" alt="Логотип барбершопа Бородинский">
       </a>
       <ul class="page-menu" aria-label="Главное меню">
         <li><a href="#">Информация</a></li>
@@ -29,7 +29,7 @@
     <h1 class="visually-hidden">Главная страница барбершопа Барадинский</h1>
 
     <section class="advantage">
-      <h2 class="visually-hiden">Наши преимущества</h2>
+      <h2 class="visually-hidden">Наши преимущества</h2>
       <ul>
         <li>
           <h3>Быстро</h3>
@@ -67,7 +67,7 @@
     <section class="fotogallery">
       <h2>Фотогалерея</h2>
       <a href="#">
-        <img src="img/interior.jpg" width="328" height="164" alt="Фото нашего рабочего места">
+        <img src="img/interior.jpg" width="268" height="164" alt="Фото нашего рабочего места">
       </a>
       <button class="button" type="button" aria-label="Показать предыдущее фото">Назад</button>
       <button class="button" type="button" aria-label="Показать следующее фото">Вперед</button>
@@ -77,7 +77,7 @@
       <h2>Контактная информация</h2>
       <p>Барбершоп «бородинский»<br>
         Адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8<br>
-        Телефон: +7 (495) 666-02-66
+        Телефон: <a href="tel:+74956660266">+7 (495) 666-02-66</a>
       </p>
       <h3>Время работы:</h3>
       <p>Пн—пт: с 10:00 до 22:00<br>
@@ -90,7 +90,7 @@
     <section class="reservation">
       <h2>Записаться</h2>
       <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-      <form action="#" method="post" name="reservation-form">
+      <form action="http://echo.htmlacademy.ru" method="post" name="reservation-form">
         <label for="date">Дата</label>
         <input type="text" name="date" id="date" placeholder="08.10.2017">
         <label for="time">Время</label>
@@ -106,30 +106,34 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
-      <form action="#" method="post" name="login-form">
+      <form action="https://echo.htmlacademy.ru" method="post" name="login-form">
         <p>
-          <label class="visually-hidden">Логин<input type="text" name="user-login" placeholder="Логин"></label>
+          <label><span class="visually-hidden">Логин</span><input type="text" name="user-login"
+              placeholder="Логин"></label>
         </p>
         <p>
-          <label class="visually-hidden">Пароль<input type="password" name="user-password" placeholder="Пароль"></label>
+          <label><span class="visually-hidden">Пароль</span><input type="password" name="user-password"
+              placeholder="Пароль"></label>
         </p>
         <p>
-          <label><input type="checkbox" value="remember-me">Запомните меня</label>
+          <label><input class="visually-hidden" type="checkbox" name="remember-me" value="remember-me">Запомните меня</label>
           <a href="#">Я забыл пароль!</a>
         </p>
         <p>
           <button class="button" type="submit">Войти</button>
         </p>
       </form>
-      <button class="modal-close" type="button">Закрыть окно для авторизации в личеый кабинет</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно для авторизации в личеый
+          кабинет</span></button>
     </section>
 
     <section>
       <h2 class="visually-hidden">Карта с координатоми нашего офиса</h2>
       <p>
-        <img src="img/modal-map.png" alt="Наш адрес: Санкт-петербург, улица Большая Конюшенная, дом 19/8. Барбершоп Барадинский">
+        <img src="img/modal-map.png"
+          alt="Наш адрес: Санкт-петербург, улица Большая Конюшенная, дом 19/8. Барбершоп Барадинский">
       </p>
-      <button class="modal-close">Закрыть модальное окно с картой</button>
+      <button class="modal-close"><span class="visually-hidden">Закрыть модальное окно с картой</span></button>
     </section>
 
   </main>
@@ -143,9 +147,11 @@
     <div class="footer-social">
       <span>Давайте дружить</span>
       <ul>
-        <li><a href="https://vk.com/htmlacademy">Наша страница в Вконтакте</a></li>
-        <li><a href="https://facebook.com/htmlacademy">Наша страница в Facebook</a></li>
-        <li><a href="https://www.instagram.com/htmlacademy/">Наша страница в Instargam</a></li>
+        <li><a href="https://vk.com/htmlacademy"><span class="visually-hidden">Наша страница в Вконтакте</span></a></li>
+        <li><a href="https://facebook.com/htmlacademy"><span class="visually-hidden">Наша страница в Facebook</span></a>
+        </li>
+        <li><a href="https://www.instagram.com/htmlacademy/"><span class="visually-hidden">Наша страница в
+              Instargam</span></a></li>
       </ul>
     </div>
     <div class="footer-copyright">
